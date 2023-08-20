@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-image {
+    margin: 40px;
+    max-height: calc(100vh - 80px);
+}
+
+.hero-text {
+    margin: 60px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+}
+
+.hero-text p {
+    font-size: 2rem;
+    margin-top: 20px;
+}

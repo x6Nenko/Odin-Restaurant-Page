@@ -1,1 +1,4 @@
-console.log("Yes, it works.");
+import heroPage from "./modules/hero-page";
+import './style.css';
+
+heroPage();

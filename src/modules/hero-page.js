@@ -1,6 +1,7 @@
 import HeroImage from "../assets/hero.jpg";
 
 function heroPageRender() {
+    // Add nav bar to navigate between home\contact\menu pages
     const contentWrapper = document.getElementById("content");
     contentWrapper.appendChild(document.createElement("main")).classList.add("hero-container");
 

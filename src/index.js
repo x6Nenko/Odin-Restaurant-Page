@@ -24,10 +24,15 @@ nav.appendChild(document.createElement("a")).id = "heroLink";
 const heroLink = document.getElementById("heroLink");
 heroLink.innerText = "Home";
 heroLink.href = "#";
+heroLink.classList.add("active");
 heroLink.addEventListener("click", function() {
     heroContent.style.display = "flex";
     menuContent.style.display = "none";
     contactContent.style.display = "none";
+
+    heroLink.classList.add("active");
+    menuLink.classList.remove("active");
+    contactLink.classList.remove("active");
 });
 
 nav.appendChild(document.createElement("a")).id = "menuLink";
@@ -38,6 +43,10 @@ menuLink.addEventListener("click", function() {
     heroContent.style.display = "none";
     menuContent.style.display = "block";
     contactContent.style.display = "none";
+
+    heroLink.classList.remove("active");
+    menuLink.classList.add("active");
+    contactLink.classList.remove("active");
 });
 
 nav.appendChild(document.createElement("a")).id = "contactLink";
@@ -48,4 +57,8 @@ contactLink.addEventListener("click", function() {
     heroContent.style.display = "none";
     menuContent.style.display = "none";
     contactContent.style.display = "block";
+
+    heroLink.classList.remove("active");
+    menuLink.classList.remove("active");
+    contactLink.classList.add("active");
 });

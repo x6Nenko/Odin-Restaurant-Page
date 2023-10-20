@@ -4,21 +4,34 @@
     margin: 0;
 }
 
-#content {
-    height: 100vh;
+html {
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #101010;
 }
+
+#content {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1440px;
+}
+
+/* ================= HOME CONTENT ================= */
 
 .hero-container {
     display: flex;
+    /* font-family: 'Josefin Sans', sans-serif; */
 }
 
 .hero-image {
     margin: 40px;
-    max-height: calc(100vh - 80px);
+    max-height: calc(90vh - 80px);
 }
 
 .hero-text {
-    margin: 60px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin: 40px;
 }
 
 .hero-text h1 {
@@ -28,4 +41,29 @@
 .hero-text p {
     font-size: 2rem;
     margin-top: 20px;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 0;
+    padding: 0 20px;
+}
+
+nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none; 
+    color: #767676;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: #4A4A4A;
+}
+
+.active {
+    color: #6E2C02 !important;
+    text-decoration: underline;
 }

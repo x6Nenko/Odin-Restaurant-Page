@@ -41,7 +41,7 @@ menuLink.innerText = "Menu";
 menuLink.href = "#";
 menuLink.addEventListener("click", function() {
     heroContent.style.display = "none";
-    menuContent.style.display = "block";
+    menuContent.style.display = "flex";
     contactContent.style.display = "none";
 
     heroLink.classList.remove("active");

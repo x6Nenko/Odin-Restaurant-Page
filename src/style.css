@@ -19,7 +19,6 @@ html {
 
 .hero-container {
     display: flex;
-    /* font-family: 'Josefin Sans', sans-serif; */
 }
 
 .hero-image {
@@ -66,4 +65,36 @@ nav a:hover {
 .active {
     color: #6E2C02 !important;
     text-decoration: underline;
+}
+
+/* ================= MENU CONTENT ================= */
+
+.menu-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px;
+}
+
+.menu-container article {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid black;
+    border-radius: 3px;
+    background-color: #f0e9e5;
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.item-name img {
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.item-price {
+    font-size: 2rem;
+    margin-top: auto;
 }

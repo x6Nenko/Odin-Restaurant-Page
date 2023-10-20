@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+#content {
+    height: 100vh;
+}
+
 .hero-container {
     display: flex;
 }

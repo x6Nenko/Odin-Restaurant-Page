@@ -98,3 +98,38 @@ nav a:hover {
     font-size: 2rem;
     margin-top: auto;
 }
+
+/* ================= CONTACT CONTENT ================= */
+
+.contact-container {
+    padding: 40px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.contact-heading h1 {
+    font-size: 4rem;
+}
+
+.contact-heading p {
+    font-size: 2rem;
+}
+
+.contact-info-container {
+    font-size: 2rem;
+    display: flex;
+}
+
+.contact-info-container article {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-info-container ul {
+    list-style: none;
+}

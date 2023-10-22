@@ -56,7 +56,7 @@ contactLink.href = "#";
 contactLink.addEventListener("click", function() {
     heroContent.style.display = "none";
     menuContent.style.display = "none";
-    contactContent.style.display = "block";
+    contactContent.style.display = "flex";
 
     heroLink.classList.remove("active");
     menuLink.classList.remove("active");
